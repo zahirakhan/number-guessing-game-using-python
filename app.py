@@ -26,7 +26,7 @@ st.markdown(
         .winner {
             font-size: 24px;
             font-weight: bold;
-            color: #00ff00;
+            color: #16ad0c;
         }
         .lost {
             font-size: 24px;
