@@ -8,10 +8,6 @@ st.set_page_config(page_title="Number Guessing Game", page_icon="🎯", layout="
 st.markdown(
     """
     <style>
-        body {
-            background-color: #f4f4f4;
-            text-align: center;
-        }
         .stApp {
             background: linear-gradient(to right, #ff7e5f, #feb47b);
             color: white;
@@ -72,4 +68,4 @@ if st.button("Restart Game"):
     st.session_state.target = random.randint(1, 100)
     st.session_state.attempts = 0
     st.session_state.game_over = False
-    st.experimental_rerun()
+    st.rerun()  # ✅ Updated Fix (instead of st.experimental_rerun())
